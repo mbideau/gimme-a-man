@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gimme-a-man 0.1.0\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2020-12-23 02:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gimme_a_man.sh:150
+msgid "A file containing the program's help output."
+msgstr ""
+
+#: gimme_a_man.sh:134 gimme_a_man.sh:425
+msgid "ARGUMENTS"
+msgstr ""
+
+#: gimme_a_man.sh:218 gimme_a_man.sh:433
+msgid "AUTHORS"
+msgstr ""
+
+#: gimme_a_man.sh:444
+msgid "Alias"
+msgstr ""
+
+#: gimme_a_man.sh:153
+msgid "Arguments passed to the %s binary"
+msgstr ""
+
+#: gimme_a_man.sh:356 gimme_a_man.sh:435
+msgid "BUGS"
+msgstr ""
+
+#: gimme_a_man.sh:424
+msgid "COMMANDS"
+msgstr ""
+
+#: gimme_a_man.sh:228 gimme_a_man.sh:439
+msgid "COPYRIGHT"
+msgstr ""
+
+#: gimme_a_man.sh:431
+msgid "DIAGNOSTICS"
+msgstr ""
+
+#: gimme_a_man.sh:412
+msgid "Devices"
+msgstr ""
+
+#: gimme_a_man.sh:173
+msgid "Display help message."
+msgstr ""
+
+#: gimme_a_man.sh:176
+msgid "Display version and license informations."
+msgstr ""
+
+#: gimme_a_man.sh:205 gimme_a_man.sh:428
+msgid "ENVIRONMENT"
+msgstr ""
+
+#: gimme_a_man.sh:179 gimme_a_man.sh:430
+msgid "EXAMPLES"
+msgstr ""
+
+#: gimme_a_man.sh:427
+msgid "FILES"
+msgstr ""
+
+#: gimme_a_man.sh:313
+msgid "Fatal error: Too few arguments (to display help, use '%s' option)"
+msgstr ""
+
+#: gimme_a_man.sh:383
+msgid "Fatal error: file '%s' doesn't exist or is not readable"
+msgstr ""
+
+#: gimme_a_man.sh:418
+msgid "Fatal error: invalid man page section number '%d'"
+msgstr ""
+
+#: gimme_a_man.sh:267
+msgid "Fatal error: invalid option"
+msgstr ""
+
+#: gimme_a_man.sh:331
+msgid "Fatal error: invalid program binary '%s'"
+msgstr ""
+
+#: gimme_a_man.sh:373
+msgid ""
+"Fatal error: the binary '%s' exited with a non-zero value when asked for '%s'"
+msgstr ""
+
+#: gimme_a_man.sh:413
+msgid "File format descriptions"
+msgstr ""
+
+#: gimme_a_man.sh:414
+msgid "Games"
+msgstr ""
+
+#: gimme_a_man.sh:126 gimme_a_man.sh:149
+msgid "HELP_FILE"
+msgstr ""
+
+#: gimme_a_man.sh:235
+msgid "Home page"
+msgstr ""
+
+#: gimme_a_man.sh:214
+msgid "Influence the translation."
+msgstr ""
+
+#: gimme_a_man.sh:138
+msgid "It will be exectued with the option '%s'."
+msgstr ""
+
+#: gimme_a_man.sh:417
+msgid "Kernel routine documentation"
+msgstr ""
+
+#: gimme_a_man.sh:158
+msgid "LOCALE"
+msgstr ""
+
+#: gimme_a_man.sh:247
+msgid "License %s: %s <%s>"
+msgstr ""
+
+#: gimme_a_man.sh:125 gimme_a_man.sh:126 gimme_a_man.sh:146
+msgid "MAN_SECT_NUM"
+msgstr ""
+
+#: gimme_a_man.sh:147
+msgid "Man page section number."
+msgstr ""
+
+#: gimme_a_man.sh:415
+msgid "Miscellaneous"
+msgstr ""
+
+#: gimme_a_man.sh:141
+msgid "Name of the program."
+msgstr ""
+
+#: gimme_a_man.sh:166
+msgid "OPTION"
+msgstr ""
+
+#: gimme_a_man.sh:125 gimme_a_man.sh:126 gimme_a_man.sh:156 gimme_a_man.sh:426
+msgid "OPTIONS"
+msgstr ""
+
+#: gimme_a_man.sh:125 gimme_a_man.sh:128 gimme_a_man.sh:136
+msgid "PROG_BIN"
+msgstr ""
+
+#: gimme_a_man.sh:125 gimme_a_man.sh:126 gimme_a_man.sh:140
+msgid "PROG_NAME"
+msgstr ""
+
+#: gimme_a_man.sh:125 gimme_a_man.sh:126 gimme_a_man.sh:143
+msgid "PROG_VERSION"
+msgstr ""
+
+#: gimme_a_man.sh:137
+msgid "Path of the program binary."
+msgstr ""
+
+#: gimme_a_man.sh:208
+msgid "Print debuging information to '%s' only if var %s='%s'."
+msgstr ""
+
+#: gimme_a_man.sh:181
+msgid "Produce the french man page for '%s'"
+msgstr ""
+
+#: gimme_a_man.sh:188
+msgid "Produce the french man page for '%s' with the %s binary"
+msgstr ""
+
+#: gimme_a_man.sh:198
+msgid "Produce the man page for '%s' from the file containing the help output"
+msgstr ""
+
+#: gimme_a_man.sh:223 gimme_a_man.sh:356 gimme_a_man.sh:437
+msgid "REPORTING BUGS"
+msgstr ""
+
+#: gimme_a_man.sh:184 gimme_a_man.sh:191 gimme_a_man.sh:201
+msgid "Read it with the '%s' command"
+msgstr ""
+
+#: gimme_a_man.sh:225
+msgid "Report bugs to"
+msgstr ""
+
+#: gimme_a_man.sh:233 gimme_a_man.sh:441
+msgid "SEE ALSO"
+msgstr ""
+
+#: gimme_a_man.sh:355 gimme_a_man.sh:423
+msgid "SYNOPSIS"
+msgstr ""
+
+#: gimme_a_man.sh:195
+msgid "Save the help message for '%s'"
+msgstr ""
+
+#: gimme_a_man.sh:215
+msgid "See %s documentation."
+msgstr ""
+
+#: gimme_a_man.sh:161
+msgid "See '%s' documentation for its definition."
+msgstr ""
+
+#: gimme_a_man.sh:411
+msgid "Subroutines"
+msgstr ""
+
+#: gimme_a_man.sh:416
+msgid "System administration tools"
+msgstr ""
+
+#: gimme_a_man.sh:410
+msgid "System calls"
+msgstr ""
+
+#: gimme_a_man.sh:159
+msgid "The language to use when calling the program."
+msgstr ""
+
+#: gimme_a_man.sh:249
+msgid "There is NO WARRANTY, to the extent permitted by law."
+msgstr ""
+
+#: gimme_a_man.sh:248
+msgid "This is free software: you are free to change and redistribute it."
+msgstr ""
+
+#: gimme_a_man.sh:160
+msgid "This will set the variable %s to the provided language."
+msgstr ""
+
+#: gimme_a_man.sh:123 gimme_a_man.sh:355 gimme_a_man.sh:422
+msgid "USAGE"
+msgstr ""
+
+#: gimme_a_man.sh:170
+msgid "Use the %s binary to produce the man page."
+msgstr ""
+
+#: gimme_a_man.sh:164
+msgid "Use the specified file as the program's help output."
+msgstr ""
+
+#: gimme_a_man.sh:167
+msgid "Use the specified option instead of calling the program with '%s'."
+msgstr ""
+
+#: gimme_a_man.sh:409
+msgid "User commands"
+msgstr ""
+
+#: gimme_a_man.sh:144
+msgid "Version of the program."
+msgstr ""
+
+#: gimme_a_man.sh:220
+msgid "Written by"
+msgstr ""
+
+#: gimme_a_man.sh:121
+msgid ""
+"generate a \"man page\" with the \"troff\" format, from a program's help "
+"output."
+msgstr ""
