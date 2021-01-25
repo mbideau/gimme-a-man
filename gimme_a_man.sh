@@ -135,7 +135,7 @@ $(__ 'ARGUMENTS')
 
     $(__ 'PROG_BIN')
         $(__ 'Path of the program binary.')
-        $(__ "It will be exectued with the option '%s'." '--help')
+        $(__ "It will be executed with the option '%s'." '--help')
 
     $(__ 'PROG_NAME')
         $(__ 'Name of the program.')
@@ -205,7 +205,7 @@ $(__ 'EXAMPLES')
 $(__ 'ENVIRONMENT')
 
     DEBUG
-        $(__ "Print debuging information to '%s' only if var %s='%s'." 'STDERR' 'DEBUG' "$PROGRAM_NAME")
+        $(__ "Print debugging information to '%s' only if var %s='%s'." 'STDERR' 'DEBUG' "$PROGRAM_NAME")
 
     LANGUAGE
     LC_ALL
@@ -337,7 +337,7 @@ if [ "$opt_file" != 'true' ]; then
     # create a temp file
     _help="$(mktemp)"
 
-    # setup a trap to remvoe temp files
+    # setup a trap to remove temp files
     # shellcheck disable=SC2064
     trap "rm -f '$_help'" INT QUIT ABRT TERM EXIT
 
@@ -396,7 +396,7 @@ LANGUAGE_BAK="$LANGUAGE"
 LC_ALL_BAK="$LC_ALL"
 LANG_BAK="$LANG"
 
-# enforce the language choosen, the time to do the translations
+# enforce the language chosen, the time to do the translations
 LANGUAGE=
 LC_ALL="$opt_locale"
 LANG=
@@ -571,7 +571,7 @@ while read -r line; do
                    { [ "$section" = "$SECT_FILES" ] || [ "$section" = "$SECT_ENVIRONMENT" ] ; }
                 then
 
-                    # unindent (before beging re-indented automatically)
+                    # unindent (before beginning re-indented automatically)
                     debug 'unindent\n'
                     echo ".RE" && debug '%s\n' ".RE"
                 fi

@@ -1,6 +1,7 @@
 # gimme-a-man
 
-Produce a manual page from the --help of a program (like GNU help2man).
+Produce a manual page from the --help of a program (like
+[*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
 
 ## USAGE
 
@@ -168,17 +169,17 @@ expected and consider good quality documentation. It's kind of broken.
 
 I tried to be friendly with `help2man` by wrapping around the output of my `--help` message to
 format it in a way that *help2man* can better understand, but without great success.  
-I still had copyright in double (even with option `--no-info`), a badly formated long option
+I still had copyright in double (even with option `--no-info`), a badly formatted long option
 descriptions, and some minor other weird stuff.
 
-It is not an issue with `help2man` itself but more that **my style of writting help message**
+It is not an issue with `help2man` itself but more that **my style of writing help message**
 is not matching the one `help2man` likes.  
 You have an example of that in this current document at the top in section USAGE.
 
 So I needed a tool for my programs to help me produce the *man* page from the output of their
 `--help` message in an automated way.
 
-I consider a good pratice to not maintain a hand written man page separatly in addition with the
+I consider a good practice to not maintain a hand written man page separately in addition with the
 `--help` output, because it could be out of sync and a then generate a really bad user experience.  
 There is also not a good reason to not provide the full help version of a program when called with
 the `--help` option. Back in time it was smart to separate the short version of `--help` and the
@@ -239,14 +240,14 @@ Cool features implemented :
 
 * tries to preserve as much as possible the existing indentation
 * highlight the program name in section *USAGE* or *SYNOPSIS*
-* highlight options definitions in section OPTIONS correctly (formated either with `-s | --long` or
+* highlight options definitions in section OPTIONS correctly (formatted either with `-s | --long` or
 `-s, --long`)
 * underline or italic on tags of sections *ARGUMENTS*, *FILES* and *ENVIRONMENT*
 * support multiple tags for one definition (one on each line with same indentation) in sections
 *FILES* and *ENVIRONMENT*
 * preserve tailing backslashes `\`, especially those in the example section to indicate a
 non-breaking line
-* escape `..` (dot dot) when at the begining of a `troff` line (which will be discarded else)
+* escape `..` (dot dot) when at the beginning of a `troff` line (which will be discarded else)
 * matches automatically the target *man section name/title* from the *man section number*
 * supports translations through option `--locale`
 * is translated (with `gettext`)
@@ -255,12 +256,12 @@ around it and calling it, so you can compare both outputs to see which one fits 
 
 Technical features :
 
-* [KISS](https://simple.wikipedia.org/wiki/KISS_(principle\)): very simple construction with a few
+* [KISS](https://simple.wikipedia.org/wiki/KISS_(principle)): very simple construction with a few
 lines of SHELL, with no dependency (except some *GNU coretuils* binaries)
-* portable *POSIX SHELL*, syntaxicaly checked with `shellcheck`
+* portable *POSIX SHELL*, syntaxically checked with `shellcheck`
 * *Makefile* that automatically build locales and man pages, but also `dist` to get a tarball of the
 sources
-* have debuging with environment variable `DEBUG=gimme-a-man`
+* have debugging with environment variable `DEBUG=gimme-a-man`
 
 #### Limits / flaws
 
@@ -271,13 +272,13 @@ First it is not unit tested, and I only use it for my own purpose, which means t
 
 Then I choose not (or gave up) implementing some feature that would have been nice to have.
 
-For exemple: highlithing options and arguments in the USAGE or SYNOPSIS section is not available
+For example: highlighting options and arguments in the USAGE or SYNOPSIS section is not available
 because the way to "encode"/"implement it" is really cumbersome : i.e. tries to be smart by removing
-spaces, and alternating automaticaly between *Roman* and *Bold*, etc. I tried to do it properly but
+spaces, and alternating automatically between *Roman* and *Bold*, etc. I tried to do it properly but
 I cannot manage to get a satisfying output in a few hours so I gave up on that feature. Though,
 maybe it is better for readability anyway.
 
-It also see lines begining with a dash `-` as an option, so it is recommended to use the wildcard
+It also see lines beginning with a dash `-` as an option, so it is recommended to use the wildcard
 `*` to create bullet-point list.
 
 
@@ -294,7 +295,7 @@ accept changes through *Pull Request*.
 
 ## Developing
 
-For being able to do a `make`, you will neet the following binaries :
+For being able to do a `make`, you will need the following binaries :
 
 * make
 * gettext, xgettext, msgfmt, msginit, msgmerge
