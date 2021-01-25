@@ -1,4 +1,4 @@
-# gimme-a-man [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg)
+# gimme-a-man [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 Produce a manual page from the --help of a program (like
 [*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
@@ -337,3 +337,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with gimme-a-man. If not, see
 <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+
+
+
+## Code of conduct
+
+Please note that this project is released with a *Contributor Code of Conduct*. By participating in
+this project you agree to abide by its terms.
