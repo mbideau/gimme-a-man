@@ -1,4 +1,4 @@
-# gimme-a-man ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg)
+# gimme-a-man [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg)
 
 Produce a manual page from the --help of a program (like
 [*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
