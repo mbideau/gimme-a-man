@@ -131,6 +131,12 @@ SEE ALSO
 
 ### Using `git` and `make`
 
+Install the required dependencies (example for *Debian* / *Ubuntu*)
+
+```sh
+~> sudo apt install make gettext gzip tar grep sed mawk coreutils
+```
+
 Get the sources
 
 ```sh
@@ -294,13 +300,6 @@ accept changes through *Pull Request*.
 
 
 ## Developing
-
-For being able to do a `make`, you will need the following binaries :
-
-* make
-* gettext, xgettext, msgfmt, msginit, msgmerge
-* gzip
-* tar
 
 Do your changes, then, in the source directory, just run :  
 ```sh
