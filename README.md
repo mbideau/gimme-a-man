@@ -1,4 +1,4 @@
-# gimme-a-man [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+# gimme-a-man [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg)[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 Produce a manual page from the --help of a program (like
 [*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
@@ -254,7 +254,7 @@ Cool features implemented :
 * tries to preserve as much as possible the existing indentation
 * highlight the program name in section *USAGE* or *SYNOPSIS*
 * highlight options definitions in section OPTIONS correctly (formatted either with `-s | --long` or
-`-s, --long`)
+  `-s, --long`)
 * underline or italic on tags of sections *ARGUMENTS*, *FILES* and *ENVIRONMENT*
 * support multiple tags for one definition (one on each line with same indentation) in sections
   *FILES* and *ENVIRONMENT*
