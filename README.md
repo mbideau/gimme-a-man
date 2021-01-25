@@ -12,8 +12,8 @@ gimme-a-man - generate a "man page" with the "troff" format, from a program's he
 
 USAGE
 
-    gimme-a-man [ -l | --locale LOCALE ] PROG_BIN PROG_NAME PROG_VERSION MAN_SECT_NUM
-    gimme-a-man [ -l | --locale LOCALE ] -f|--file HELP_FILE PROG_NAME PROG_VERSION MAN_SECT_NUM
+    gimme-a-man [OPTIONS] PROG_BIN PROG_NAME PROG_VERSION MAN_SECT_NUM
+    gimme-a-man [OPTIONS] -f|--file HELP_FILE PROG_NAME PROG_VERSION MAN_SECT_NUM
 
     gimme-a-man -H|--help2man PROG_BIN [ -- ..HELP2MAN_ARGS.. ]
 
@@ -25,7 +25,7 @@ ARGUMENTS
 
     PROG_BIN
         Path of the program binary.
-        It will be exectued with the option '--help'.
+        It will be executed with the option '--help'.
 
     PROG_NAME
         Name of the program.
@@ -53,6 +53,9 @@ OPTIONS
     -f | --file
         Use the specified file as the program's help output.
 
+    -o | --help-option OPTION
+        Use the specified option instead of calling the program with '--help'.
+
     -H | --help2man
         Use the GNU help2man binary to produce the man page.
 
@@ -72,7 +75,7 @@ EXAMPLES
     $ man /tmp/gimme-a-man.nice.fr.man
 
 
-    Produce the french man page for 'gimme-a-man' with the GNU help2man binary
+    Produce the french man page for 'gimme-a-man' with the help2man binary
     $ gimme-a-man gimme-a-man --help2man -- -L fr_FR.UTF-8 --section 1 > /tmp/gimme-a-man.less-nice.man
 
     Read it with the 'man' command
@@ -92,7 +95,7 @@ EXAMPLES
 ENVIRONMENT
 
     DEBUG
-        Print debuging information to 'STDERR' only if var DEBUG='gimme-a-man'.
+        Print debugging information to 'STDERR' only if var DEBUG='gimme-a-man'.
 
     LANGUAGE
     LC_ALL
@@ -109,12 +112,12 @@ AUTHORS
 
 REPORTING BUGS
 
-    Report bugs to: <mica.devel@gmail.com>
+    Report bugs to: <https://github.com/mbideau/gimme-a-man/issues>
 
 
 COPYRIGHT
 
-    Copyright (C) 2020 Michael Bideau.
+    Copyright (C) 2020-2021 Michael Bideau.
     License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
     This is free software: you are free to change and redistribute it.
     There is NO WARRANTY, to the extent permitted by law.
@@ -317,7 +320,7 @@ If you want a clean tarball of the sources, you can run :
 
 ## Copyright and License GPLv3
 
-Copyright (C) 2020 Michael Bideau [France]
+Copyright (C) 2020-2021 Michael Bideau [France]
 
 This file is part of gimme-a-man.
 
@@ -332,4 +335,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with gimme-a-man. If not, see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+along with gimme-a-man. If not, see
+<[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
