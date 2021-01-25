@@ -6,7 +6,8 @@ Produce a manual page from the --help of a program (like
 ## USAGE
 
 This is the output of `gimme-a-man --help` :
-```
+
+```text
 
 gimme-a-man - generate a "man page" with the "troff" format, from a program's help output.
 
@@ -151,6 +152,7 @@ Get the sources
 This will install it to `/usr/local/bin/gimme-a-man`.
 
 If you want to install it to /usr/bin, just replace the last instruction by :  
+
 ```sh
 ~> make install prefix=/usr
 ```
@@ -158,10 +160,12 @@ If you want to install it to /usr/bin, just replace the last instruction by :
 ### The raw / hacker way, using `wget` or `curl`
 
 Extract the SHELL script from the repository :
+
 ```sh
 ~> wget "https://github.com/mbideau/gimme-a-man/raw/master/gimme_a_man.sh" /usr/local/bin/gimme-a-man
 ~> chmod +x /usr/local/bin/gimme-a-man
 ```
+
 You will not have the translations though, which could prevent you to correctly handle translated
 `--help` message.
 
@@ -253,23 +257,23 @@ Cool features implemented :
 `-s, --long`)
 * underline or italic on tags of sections *ARGUMENTS*, *FILES* and *ENVIRONMENT*
 * support multiple tags for one definition (one on each line with same indentation) in sections
-*FILES* and *ENVIRONMENT*
+  *FILES* and *ENVIRONMENT*
 * preserve tailing backslashes `\`, especially those in the example section to indicate a
-non-breaking line
+  non-breaking line
 * escape `..` (dot dot) when at the beginning of a `troff` line (which will be discarded else)
 * matches automatically the target *man section name/title* from the *man section number*
 * supports translations through option `--locale`
 * is translated (with `gettext`)
 * can produce the same output as the original *GNU help2man* (with option `--help2man`), by wrapping
-around it and calling it, so you can compare both outputs to see which one fits your needs/style
+  around it and calling it, so you can compare both outputs to see which one fits your needs/style
 
 Technical features :
 
 * [KISS](https://simple.wikipedia.org/wiki/KISS_(principle)): very simple construction with a few
-lines of SHELL, with no dependency (except some *GNU coretuils* binaries)
+  lines of SHELL, with no dependency (except some *GNU coretuils* binaries)
 * portable *POSIX SHELL*, syntaxically checked with `shellcheck`
 * *Makefile* that automatically build locales and man pages, but also `dist` to get a tarball of the
-sources
+  sources
 * have debugging with environment variable `DEBUG=gimme-a-man`
 
 #### Limits / flaws
@@ -305,6 +309,7 @@ accept changes through *Pull Request*.
 ## Developing
 
 Do your changes, then, in the source directory, just run :  
+
 ```sh
 ~> make
 ```
@@ -313,6 +318,7 @@ Do your changes, then, in the source directory, just run :
 ## Distribution
 
 If you want a clean tarball of the sources, you can run :  
+
 ```sh
 ~> make dist
 ```
