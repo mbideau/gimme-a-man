@@ -8,6 +8,8 @@ default_stages:
  - push
 
 repos:
+
+ # common stuff
  - repo: https://github.com/pre-commit/pre-commit-hooks
    rev: v3.4.0
    hooks:
@@ -20,7 +22,16 @@ repos:
     - id: check-vcs-permalinks
     - id: forbid-new-submodules
 
+ # commit messages (IMPORTANT: install it with: `pre-commit install --hook-type commit-msg`)
  - repo: https://github.com/jorisroovers/gitlint
    rev: v0.15.0
    hooks:
     - id: gitlint
+
+ # shellcheck
+ - repo: git://github.com/detailyang/pre-commit-shell
+   rev: 1.0.5
+   hooks:
+    - id: shell-lint
+      args:
+       - '--format=json'
