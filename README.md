@@ -122,7 +122,7 @@ REPORTING BUGS
 
 COPYRIGHT
 
-    Copyright (C) 2020-2021 Michael Bideau.
+    Copyright © 2020-2021 Michael Bideau.
     License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
     This is free software: you are free to change and redistribute it.
     There is NO WARRANTY, to the extent permitted by law.
@@ -181,7 +181,7 @@ You will not have the translations though, which could prevent you to correctly 
 The [*GNU* *help2man*](https://www.gnu.org/software/help2man/) utility purpose is to produce
 *man* page from a from program's help output (when the program is called with the `--help` option).
 
-But the way the *man* page is produced by `help2man` from the output of my programs, is not what I
+The way the *man* page is produced by `help2man` from the output of my programs, is not what I
 expected and consider good quality documentation. It's kind of broken.
 
 I tried to be friendly with `help2man` by wrapping around the output of my `--help` message to
@@ -204,14 +204,14 @@ full documentation in `man` or `info` in order to save some kilobytes in the pro
 all the space we have in disk and in memory, not anymore.
 
 After reviewing the prior art (see below) and concluded that nothing was good for my needs I went
-with writing my own (very rapidly and very raw, but does the job).
+with writing my own (rapidly and raw, but does the job).
 
 ### Prior art analysis
 
 As the time of writing this (i.e.: Dec. 2020), I have found 21 projects with the name `help2man`
 on *Github* and 2 on *Gitlab*.  
 All of them are just forks of the *GNU help2man*, or specs files to build it/patch it.
-Not very helpful.
+Not helpful.
 
 ### Solution
 
@@ -231,7 +231,7 @@ For the *man* page format (there are multiple ones supported), I choose to stick
 format, even if *Texinfo* is recommended, because it was way simpler for me to manipulate to
 achieve my goal in short time.
 
-But, despite its simplicity and old age, it was not easy (i.e.: few minutes) to understand how
+Despite its simplicity and old age, it was not easy (i.e.: few minutes) to understand how
 `troff/groff` worked, and especialy to know that I should use the specific set of `groff` macros
 for `man` and find a proper documentation for this set.
 
@@ -273,7 +273,7 @@ Cool features implemented :
 
 Technical features :
 
-* [KISS](https://simple.wikipedia.org/wiki/KISS_(principle)): very simple construction with a few
+* [KISS](https://simple.wikipedia.org/wiki/KISS_(principle)): simple construction with a few
   lines of SHELL, with no dependency (except some *GNU coretuils* binaries)
 * portable *POSIX SHELL*, syntaxically checked with `shellcheck`
 * *Makefile* that automatically build locales and man pages, but also `dist` to get a tarball of the
@@ -330,23 +330,20 @@ If you want a clean tarball of the sources, you can run :
 
 ## Copyright and License GPLv3
 
-Copyright (C) 2020-2021 Michael Bideau [France]
+Copyright © 2020-2021 Michael Bideau [France]
 
 This file is part of gimme-a-man.
 
-gimme-a-man is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+gimme-a-man is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
 
-gimme-a-man is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+gimme-a-man is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with gimme-a-man. If not, see
-<[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
+You should have received a copy of the GNU General Public License along with gimme-a-man. If not,
+see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
 
 
 
