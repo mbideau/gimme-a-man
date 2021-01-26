@@ -567,7 +567,7 @@ while read -r line; do
                 debug 'section using tags\n'
 
                 # if indentation hasn't changed and in section with potential multiple tags
-                if [ "$i" -eq "$indent" ] && 
+                if [ "$i" -eq "$indent" ] &&
                    { [ "$section" = "$SECT_FILES" ] || [ "$section" = "$SECT_ENVIRONMENT" ] ; }
                 then
 
