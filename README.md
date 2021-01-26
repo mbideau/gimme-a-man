@@ -348,6 +348,7 @@ and run the pre-commit hooks against all files to ensure everything is functiona
 ~> pre-commit autoupdate
 ~> pre-commit install
 ~> pre-commit install --hook-type commit-msg
+~> pre-commit install --hook-type pre-push
 ~> pre-commit run --all-files
 ~> pre-commit run gitlint --hook-stage commit-msg --commit-msg-filename .git/COMMIT_EDITMSG
 ```
