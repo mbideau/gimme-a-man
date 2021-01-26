@@ -40,6 +40,12 @@ repos:
 #      args:
 #       - '--format=json'
 
+ # replace help in USAGE of the README
+ - repo: git://github.com/mbideau/pre-commit-makefile
+   rev: v0.3.0
+   hooks:
+    - id: makefile-doc
+
  # shellcheck and markdown mostly
  - repo: https://github.com/jumanjihouse/pre-commit-hooks
    rev: 2.1.4
@@ -50,7 +56,7 @@ repos:
     # - id: script-must-have-extension
     # - id: script-must-not-have-extension
 
-  # 'make all' before push
+ # 'make all' before push
  - repo: git://github.com/primeroz/pre-commit-hook-makefile-task
    rev: v0.0.2
    hooks:

@@ -11,6 +11,7 @@ Produce a manual page from the --help of a program (like
 ## USAGE
 
 This is the output of `gimme-a-man --help` :
+<!-- START makefile-doc -->
 
 ```text
 
@@ -132,8 +133,9 @@ COPYRIGHT
 SEE ALSO
 
     Home page: <https://github.com/mbideau/gimme-a-man>
-
 ```
+
+<!-- END makefile-doc -->
 
 
 ## Installation

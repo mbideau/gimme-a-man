@@ -331,6 +331,10 @@ shellcheck:
 	done;
 
 
+# output the help/usage of the program
+help: $(MAIN_SCRIPT)
+	@LC_ALL=C.UTF-8 $(MAIN_SCRIPT) --help
+
 # create all dist directories
 $(DIST_DIRS):
 	@echo "## Creating directory '$@'"
@@ -358,7 +362,7 @@ distclean: clean
 
 
 # catch-all
-.PHONY: all install uninstall clean shellcheck dist distclean
+.PHONY: all install uninstall clean shellcheck dist distclean help
 
 
 # default target
