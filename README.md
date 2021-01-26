@@ -319,6 +319,21 @@ Install the required dependencies (example for *Debian* / *Ubuntu*)
 ~> sudo apt install git make pre-commit shellcheck gettext gzip tar grep sed mawk coreutils
 ```
 
+Install [markdownlint](https://github.com/markdownlint/markdownlint) in the path
+
+```sh
+~> sudo apt install bundler
+~> mkdir -p /usr/local/lib/markdownlint
+~> cat > /usr/local/lib/markdownlint/Gemfile <<ENDCAT
+source 'https://rubygems.org'
+gem 'mdl'
+ENDCAT
+~> cd /usr/local/lib/markdownlint
+~> bundler install
+~> cd -
+~> mdl --version
+```
+
 Get the sources
 
 ```sh
@@ -338,7 +353,23 @@ and run the pre-commit hooks against all files to ensure everything is functionn
 ~> pre-commit run gitlint --hook-stage commit-msg --commit-msg-filename .git/COMMIT_EDITMSG
 ```
 
-Do your changes, then, in the source directory, just run :
+Note: if you get the following error, just ignore it a re-run the last command that produces it
+
+```sh
+~> pre-commit run --all-files
+[INFO] Initializing environment for https://github.com/jumanjihouse/pre-commit-hooks:shellcheck.
+[INFO] Installing environment for https://github.com/jumanjihouse/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+An unexpected error has occurred: CalledProcessError: command: ('/usr/bin/ruby', '/usr/bin/gem', 'install', '--no-document', '--no-format-executable', 'fake_gem__-0.0.0.gem')
+return code: -9
+expected return code: 0
+stdout: (none)
+stderr: (none)
+Check the log at /root/.cache/pre-commit/pre-commit.log
+```
+
+Once everything is set up, do your changes, then, in the source directory, just run :
 
 ```sh
 ~> make
