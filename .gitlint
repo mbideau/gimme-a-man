@@ -3,6 +3,10 @@
 # their id or by their full name
 ignore=body-is-missing,T3
 
+# You HAVE to add the rule here to enable it, only configuring (such as below)
+# does NOT enable it.
+contrib=contrib-title-conventional-commits
+
 # Configure title-max-length rule, set title length to 50 (72 = default)
 [title-max-length]
 line-length=50
