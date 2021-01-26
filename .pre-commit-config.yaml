@@ -29,6 +29,8 @@ repos:
    rev: v0.15.0
    hooks:
     - id: gitlint
+      stages:
+       - commit-msg
 
 # # shellcheck
 # - repo: git://github.com/detailyang/pre-commit-shell
@@ -40,10 +42,20 @@ repos:
 
  # shellcheck and markdown mostly
  - repo: https://github.com/jumanjihouse/pre-commit-hooks
-   rev: 2.1.4  # or specific git tag
+   rev: 2.1.4
    hooks:
     - id: shellcheck
     - id: markdownlint
     # - id: require-ascii
     # - id: script-must-have-extension
     # - id: script-must-not-have-extension
+
+  # 'make all' before push
+ - repo: git://github.com/primeroz/pre-commit-hook-makefile-task
+   rev: v0.0.2
+   hooks:
+    - id: makefile-task
+      args:
+       - 'all'
+      stages:
+       - push
