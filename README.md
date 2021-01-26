@@ -233,7 +233,7 @@ format, even if *Texinfo* is recommended, because it was way simpler for me to m
 achieve my goal in short time.
 
 Despite its simplicity and old age, it was not easy (i.e.: few minutes) to understand how
-`troff/groff` worked, and especialy to know that I should use the specific set of `groff` macros
+`troff/groff` worked, and especially to know that I should use the specific set of `groff` macros
 for `man` and find a proper documentation for this set.
 
 Anyway, I found the following resources :
@@ -342,7 +342,7 @@ Get the sources
 ```
 
 Update the [pre-commit](http://pre-commit.com/) environments, then install the hooks,
-and run the pre-commit hooks against all files to ensure everything is functionnal
+and run the pre-commit hooks against all files to ensure everything is functional
 
 ```sh
 ~> pre-commit autoupdate
