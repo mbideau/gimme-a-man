@@ -1,4 +1,6 @@
 ---
+# yamllint disable rule:comments-indentation
+
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 
@@ -28,10 +30,20 @@ repos:
    hooks:
     - id: gitlint
 
- # shellcheck
- - repo: git://github.com/detailyang/pre-commit-shell
-   rev: 1.0.5
+# # shellcheck
+# - repo: git://github.com/detailyang/pre-commit-shell
+#   rev: 1.0.5
+#   hooks:
+#    - id: shell-lint
+#      args:
+#       - '--format=json'
+
+ # shellcheck and markdown mostly
+ - repo: https://github.com/jumanjihouse/pre-commit-hooks
+   rev: 2.1.4  # or specific git tag
    hooks:
-    - id: shell-lint
-      args:
-       - '--format=json'
+    - id: shellcheck
+    - id: markdownlint
+    # - id: require-ascii
+    # - id: script-must-have-extension
+    # - id: script-must-not-have-extension

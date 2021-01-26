@@ -143,7 +143,7 @@ SEE ALSO
 Install the required dependencies (example for *Debian* / *Ubuntu*)
 
 ```sh
-~> sudo apt install make gettext gzip tar grep sed mawk coreutils
+~> sudo apt install git make gettext gzip tar grep sed mawk coreutils
 ```
 
 Get the sources
@@ -313,21 +313,49 @@ accept changes through *Pull Request*.
 
 ## Developing
 
-Do your changes, then, in the source directory, just run :  
+Install the required dependencies (example for *Debian* / *Ubuntu*)
+
+```sh
+~> sudo apt install git make pre-commit shellcheck gettext gzip tar grep sed mawk coreutils
+```
+
+Get the sources
+
+```sh
+~> git clone -q https://github.com/mbideau/gimme-a-man
+~> cd gimme-a-man
+~> make install
+```
+
+Update the [pre-commit](http://pre-commit.com/) environments, then install the hooks,
+and run the pre-commit hooks against all files to ensure everything is functionnal
+
+```sh
+~> pre-commit autoupdate
+~> pre-commit install
+~> pre-commit install --hook-type commit-msg
+~> pre-commit run --all-files
+~> pre-commit run gitlint --hook-stage commit-msg --commit-msg-filename .git/COMMIT_EDITMSG
+```
+
+Do your changes, then, in the source directory, just run :
 
 ```sh
 ~> make
 ```
 
+When you are ready to commit your modifications, remember that the commit message follows the
+[Conventional Commits](https://www.conventionalcommits.org/) specification, with a **title length
+limited to 50 chars**.
+
 
 ## Distribution
 
-If you want a clean tarball of the sources, you can run :  
+If you want a clean tarball of the sources, you can run :
 
 ```sh
 ~> make dist
 ```
-
 
 ## Copyright and License GPLv3
 
