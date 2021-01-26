@@ -339,7 +339,6 @@ Get the sources
 ```sh
 ~> git clone -q https://github.com/mbideau/gimme-a-man
 ~> cd gimme-a-man
-~> make install
 ```
 
 Update the [pre-commit](http://pre-commit.com/) environments, then install the hooks,
