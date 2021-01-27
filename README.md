@@ -1,17 +1,18 @@
 # gimme-a-man
 
-![Release](https://img.shields.io/github/v/release/mbideau/gimme-a-man)
-![Release Date](https://img.shields.io/github/release-date/mbideau/gimme-a-man)
+Produce a manual page from the `--help` of a program (like
+[*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
 
+It is a single file *POSIX* shell script of ~ 390 lines of codes (without blanks and comments).
+
+![Release](https://img.shields.io/github/v/release/mbideau/gimme-a-man)
+![Release Date](https://img.shields.io/github/release-date/mbideau/gimme-a-man)  
 ![Build](https://github.com/mbideau/gimme-a-man/workflows/build/badge.svg)
 ![Shellcheck](https://github.com/mbideau/gimme-a-man/workflows/Shellcheck/badge.svg)
-
+![Shell POSIX](https://img.shields.io/badge/shell-POSIX-darkgreen)  
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-
-Produce a manual page from the --help of a program (like
-[*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
 
 ## USAGE
 
