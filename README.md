@@ -175,7 +175,7 @@ If you want to install it to /usr/bin, just replace the last instruction by :
 Extract the SHELL script from the repository :
 
 ```sh
-~> wget "https://github.com/mbideau/gimme-a-man/raw/master/gimme_a_man.sh" /usr/local/bin/gimme-a-man
+~> wget "https://raw.githubusercontent.com/mbideau/gimme-a-man/main/gimme_a_man.sh" /usr/local/bin/gimme-a-man
 ~> chmod +x /usr/local/bin/gimme-a-man
 ```
 
