@@ -3,7 +3,7 @@
 Produce a manual page from the `--help` of a program (like
 [*GNU* *help2man*](https://www.gnu.org/software/help2man/)).
 
-It is a single file *POSIX* shell script of ~ 390 lines of codes (without blanks and comments).
+It is a single file *POSIX* shell script of ~ 390 lines of code (without blanks and comments).
 
 ![Release](https://img.shields.io/github/v/release/mbideau/gimme-a-man)
 ![Release Date](https://img.shields.io/github/release-date/mbideau/gimme-a-man)  
