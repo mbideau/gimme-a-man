@@ -159,7 +159,8 @@ Get the sources
 ```sh
 ~> git clone -q https://github.com/mbideau/gimme-a-man
 ~> cd gimme-a-man
-~> make install
+~> make
+~> sudo make install
 ```
 
 This will install it to `/usr/local/bin/gimme-a-man`.
@@ -167,7 +168,7 @@ This will install it to `/usr/local/bin/gimme-a-man`.
 If you want to install it to /usr/bin, just replace the last instruction by :  
 
 ```sh
-~> make install prefix=/usr
+~> sudo make install prefix=/usr
 ```
 
 ### The raw / hacker way, using `wget` or `curl`
@@ -400,17 +401,17 @@ If you want a clean tarball of the sources, you can run :
 
 Copyright © 2020-2021 Michael Bideau [France]
 
-This file is part of gimme-a-man.
+This file is part of _gimme-a-man_.
 
-gimme-a-man is free software: you can redistribute it and/or modify it under the terms of the GNU
+_gimme-a-man_ is free software: you can redistribute it and/or modify it under the terms of the GNU
 General Public License as published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.
 
-gimme-a-man is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+_gimme-a-man_ is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
 even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with gimme-a-man. If not,
+You should have received a copy of the GNU General Public License along with _gimme-a-man_. If not,
 see <[https://www.gnu.org/licenses/](https://www.gnu.org/licenses/)>.
 
 
